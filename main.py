@@ -2,9 +2,9 @@ from tkinter import *
 from tkinter import ttk
 
 # Constants
-HFILL_STICKY = (W, E)
-VFILL_STICKY = (N, S)
-FILL_STICKY  = (N, S, W, E)
+WE = (W, E)
+NS = (N, S)
+NSWE  = (N, S, W, E)
 
 # Custom classes
 class StringVarEntry():
@@ -34,10 +34,10 @@ mins   = StringVarEntry(master=menuframe)
 secs   = StringVarEntry(master=menuframe)
 rounds = StringVarEntry(master=menuframe)
 rest   = StringVarEntry(master=menuframe)
-mins.entry.grid  (row=0, column=1, sticky=HFILL_STICKY)
-secs.entry.grid  (row=1, column=1, sticky=HFILL_STICKY)
-rounds.entry.grid(row=2, column=1, sticky=HFILL_STICKY)
-rest.entry.grid  (row=3, column=1, sticky=HFILL_STICKY)
+mins.entry.grid  (row=0, column=1, sticky=WE)
+secs.entry.grid  (row=1, column=1, sticky=WE)
+rounds.entry.grid(row=2, column=1, sticky=WE)
+rest.entry.grid  (row=3, column=1, sticky=WE)
 mins.set  ( 1)
 secs.set  ( 0)
 rounds.set(10)
